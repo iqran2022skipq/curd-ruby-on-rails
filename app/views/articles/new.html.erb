@@ -1,0 +1,13 @@
+<h1 class="text-center jost">Add Article</h1>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <%= form_with model:@article do |f| %> 
+            <%= f.text_field :name , class:'form-control', placeholder:"Enter the Article Name"%>
+            <%= f.text_area :description,cols:30, rows:10, placeholder:"Enter the Article Detail", class:'form-control my-3'%>
+            <%= f.submit "Add",class:"btn btn-success"%>
+            <%end %>
+        </div>
+    </div>
+</div>

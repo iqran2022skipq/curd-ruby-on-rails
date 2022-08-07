@@ -1,0 +1,13 @@
+<h1 class="text-center jost">Update Article</h1>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <%= form_with model:@article do |f| %> 
+            <%= f.text_field :name , class:'form-control'  %>
+            <%= f.text_area :description,cols:30, rows:10, class:'form-control my-3'%>
+            <%= f.submit "Update",class:"btn btn-success"%>
+            <%end %>
+        </div>
+    </div>
+</div>

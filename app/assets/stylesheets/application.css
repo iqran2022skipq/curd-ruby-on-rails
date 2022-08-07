@@ -1,0 +1,62 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@1,100&family=Lato:ital,wght@0,900;1,100;1,400;1,700&display=swap');
+
+:root{
+    --primary:#317773;
+    --secondary:#E2D1F9;
+}
+
+body{
+background-color:var(--secondary);
+font-size:18px !important;
+font-weight:400px;
+}
+
+.primary-bg{
+    background-color:var(--primary);
+}
+.secondary-bg{
+    background-color:var(--secondary);
+}
+.nav-link{
+    color:white !important;
+    font-size:18px !important;
+}
+
+.navbar-toggler{
+    color: white !important;
+    background-color:transparent !important;
+    border:none !important;
+}
+.navbar-brand{
+    font-family: 'Lato', sans-serif !important;
+    font-weight:400px;
+}
+.navbar-toggler:active{
+    border:none !important;
+}
+p{
+    text-align:justify !important;
+    font-weight:100 !important;
+}
+.primary-text{
+    color: var(--primary) !important;
+}
+.jost{
+    font-family: 'Lato', sans-serif !important;
+}
